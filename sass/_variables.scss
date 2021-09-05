@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,800&display=swap');
+
+$color-text: #f8f8f8;
+$color-text-darker: #e6e6e6;
+$color-accent: #f98baf;
+$color-card: #545454;
+
+
+
+@keyframes line {
+    60%{
+        transform: translateX(30px);
+        width: 0px;
+    }
+    80%{
+        transform: translateX(0);
+        width: 90px;
+    }
+    0%{
+        transform: translateX(130px);
+        width: 0px;
+    }
+    30%{
+        transform: translateX(0);
+        width: 90px;
+    }
+}
+
+@keyframes box_down{
+    from{
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade_in{
+    from{
+        // transform: translateY(-30px);
+        opacity: 0;
+    }
+    to{
+        // transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@mixin trans {
+    transition: .5s;
+}

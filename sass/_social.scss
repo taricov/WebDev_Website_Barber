@@ -1,0 +1,87 @@
+.social
+{
+    position: absolute;
+    top: 35%;
+
+    ul
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        list-style: none;
+
+        .fab
+        {
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+            color: $color-text-darker;
+            padding: 10px;
+            margin: 3px 0;
+            border-radius: 0 10px 10px 0;
+            background: rgba(255,255,255, .05);
+            @include trans;
+
+            &:hover
+            {
+                background: rgba(255,255,255, .8);
+                color: rgba(0,0,0, .7);
+
+            }
+
+            &.fa-facebook
+            {
+                animation: face 2s ease-out ;
+            }
+            &.fa-twitter
+            {
+                animation: twitter 2s .5s ease-out forwards;
+                opacity: 0;
+
+            }
+            &.fa-youtube
+            {
+                animation: you 2s 1s ease-out forwards;
+                opacity: 0;
+
+            }
+        }
+      
+    }
+}
+
+
+
+
+@keyframes face {
+    from{
+        transform: translateX(-300px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes twitter {
+    from{
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes you {
+    from{
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

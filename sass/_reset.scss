@@ -1,0 +1,48 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a
+{
+    text-decoration: none;
+    color: $color-text-darker;
+    opacity: .7;
+    @include trans;    
+
+    &:hover
+    {
+        opacity: 1;
+    }
+    
+}
+
+
+
+
+
+// @keyframes box2{
+//     from{
+//         transform: translateY(-30px);
+//         opacity: 0;
+//     }
+//     to{
+//         transform: translateY(0);
+//         opacity: 1;
+//     }
+// }
+
+
+// @keyframes box3{
+//     from{
+//         transform: translateY(-30px);
+//         opacity: 0;
+//     }
+//     to{
+//         transform: translateY(0);
+//         opacity: 1;
+//     }
+// }    
